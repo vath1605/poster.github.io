@@ -187,8 +187,92 @@ main{
             & #div2{
                 width: 20.4%;
                 height: 100%;
-                background-color: #7e9ac6;
+                background-color: white;
                 border-radius: 30px;
+                padding: 20px;
+
+                & #s1 , #s2 , #s3 , #s4{
+                    width: 100%;
+                    height: 25%;
+                }
+
+                & #s1{
+                    line-height: 15px;
+                    & h5{
+                        font-family: var(--main-font);
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+                    & p{
+                        font-family: var(--main-font);
+                        font-size: 12px;
+                        color: var(--text-gray);
+                    }
+                }
+                & #s2{
+                     
+                    & .box{
+                        width: 100%;
+                        height: 80%;
+                        background-color: var(--bg-gray);
+                        display: flex;
+                        border-radius: 8px;
+                        & .box-left{
+                            width: 50%;
+                            height: 100%;
+                            padding: 2px;
+                            & p{
+                                font-family: var(--main-font);
+                                font-size: 12px;
+                                background-color: white;
+                                border-radius: 8px;
+                                width: 100%;
+                                height: 100%;
+                                display: grid;
+                                place-items: center;
+                            }
+                        }
+
+                        & .box-right{
+                            font-family: var(--main-font);
+                            display: grid; 
+                            place-items: center;
+                            width: 50%;
+                            height: 100%;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                & #s3{
+                    line-height: 15px;
+                    & h6{
+                        font-family: var(--main-font);
+                        font-weight: 500;
+
+                    }
+
+                    & p{
+                        font-family: var(--main-font);
+                        font-size: 12px;
+                        color: var(--text-gray);
+                    }
+                }
+
+                & #s4{
+                    line-height: 15px;
+                    & h6{
+                        font-family: var(--main-font);
+                        font-weight: 500;
+
+                    }
+
+                    & p{
+                        font-family: var(--main-font);
+                        font-size: 12px;
+                        color: var(--text-gray);
+                    }
+                }
             }
         }
 
@@ -199,9 +283,63 @@ main{
             & #div3 , #div5{
                 width: 20.4%;
                 height: 100%;
-                background-color: brown;
+                background-color: white;
                 border-radius: 30px;
 
+            }
+
+            & #div3{
+                padding-top: 20px;
+                & .s1 , .s2 , .s3{
+                    width: 100%;
+                    height: calc(100% / 3);
+                }
+
+                & .s1{
+                    display: flex; 
+                    justify-content: center;
+                    gap: 10px;
+                    align-items: end;
+                    padding-bottom: 10px;
+                    & img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        
+                    }
+                }
+                & .s2{
+                    display: flex; 
+                    justify-content: center;
+                    gap: 10px;
+                    align-items: start;
+                    & img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        
+                    }
+                }
+                & .s3{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    line-height: 15px;
+                    padding-top: 5px;
+                    & p{
+                        font-family: var(--main-font);
+                        font-weight: 500;
+                        font-size: 15px;
+                    }
+
+                    & #p-bottom{
+                        font-size: 12px;
+                        font-weight: 300;
+                        color: var(--text-gray);
+                    }
+                }
             }
 
             &  #div4{
