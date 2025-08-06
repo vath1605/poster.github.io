@@ -360,8 +360,179 @@ main{
             & #div6{
                 width: 45%;
                 height: 100%;
-                background-color: aquamarine;
+                background-color: white;
                 border-radius: 30px;
+
+                & .s1{
+                    width: 100%;
+                    height: 25%;
+                    border-bottom: 2px dashed var(--text-gray);
+
+                    & .dv1{
+                        width: 100%;
+                        height: 40%;
+                        font-family: var(--main-font);
+                        display: flex;
+                        align-items: center;
+                        padding-left: 30px;
+                    }
+                    & .dv2{
+                        width: 100%;
+                        height: 60%;
+                        display: flex;
+
+                        & .left{
+                            width: 50%;
+                            height: 100%;
+                            display: flex;
+                            position: relative;
+
+                            & img, .circle{
+                                position: absolute;
+                                width: 35px;
+                                height: 35px;
+                                object-fit: cover;
+                                border-radius: 50%;
+                                border: 2px solid white;
+                                background-color: var(--bg-gray);
+                            }
+                            & #img4{
+                                left: 40%;
+                                color: var(--text-dark);
+                                font-family: var(--main-font);
+                                font-size: 14px;
+                                display: grid;
+                                place-items: center;
+                            }
+                            & #img3{
+                                left: 30%;
+                            }
+                            & #img2{
+                                left: 20%;
+                            }
+                            & #img1{
+                                left: 10%;
+                            }
+                        }
+                        & .right{
+                            width: 50%;
+                            height: 100%;
+                            display: flex; 
+                            justify-content: center;
+                            & div{
+                                width: 70%;
+                                height: 35px;
+                                border-radius: 20px;
+                                background-color: var(--bg-gray);
+                                display: flex;
+                                align-items: center;
+                                & .sec1{
+                                    width: 80%;
+                                    height: 100%;
+                                    display: flex;
+                                    font-family: var(--main-font);
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: var(--text-gray);
+                                    font-size: 14px;
+                                }
+                                
+                                & .sec2{
+                                    width: 30px;
+                                    height: 30px;
+                                    background-color: white;
+                                    border-radius: 50%;
+                                    display: grid;
+                                    place-items: center;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .s2{
+                    width: 100%;
+                    height: 75%;
+                    overflow-y: scroll;
+                    scrollbar-width: none;
+                    position: relative;
+                    & .blur{
+                        width: 475px;
+                        bottom: 77px;
+                        height: 40px;
+                        background-color: rgba(255, 255, 255, 0.41);
+                        backdrop-filter: blur(5px);
+                        position: fixed;
+                        border-bottom-right-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                    }
+                    & div{
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 10px 20px;
+                        & h5{
+                            font-size: 15px;
+                            font-family: var(--main-font);
+                        }
+
+                        & p{
+                            font-family: var(--main-font);
+                            color: var(--text-gray);
+                        }
+                    }
+                    & article{
+                        width: 100%;
+                        height: 80px;
+                        border-bottom: 2px solid var(--text-gray);
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding-right: 20px;
+                        & .add{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: var(--bg-gray);
+                            color: var(--text-dark);
+                            font-size: 20px;
+                            font-weight: bold;
+                            display: flex; 
+                            align-items: center;
+                            justify-content: center;
+                            padding: 0;
+                        }
+                        & .card{
+                            width: 70%;
+                            height: 100%;  
+                            display: flex;
+                            align-items: center;
+                            
+                            & img{
+                            width: 60px;
+                            height: 60px;
+                            object-fit: cover;
+                            border-radius: 50%;
+
+                        }
+                        & .text{
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+
+                            & h5{
+                                font-size: 15px;
+
+                            }
+                            & p{
+                                font-size: 12px;
+                            }
+                        } 
+
+                        }
+                    }
+                }
             }
 
             & #div7{
